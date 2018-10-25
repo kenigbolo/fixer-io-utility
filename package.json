@@ -1,0 +1,37 @@
+{
+  "name": "fixer-io-utility",
+  "version": "1.0.0",
+  "description": "A tiny node module for requests to fixer.io",
+  "main": "index.js",
+  "engines": {
+    "node": "9.2.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenigbolo/fixer-io-utility.git"
+  },
+  "keywords": [
+    "fixer",
+    "utility",
+    "request",
+    "node",
+    "fixer.io",
+    "currencies",
+    "timeseries",
+    "finance"
+  ],
+  "author": "Kenigbolo Meya Stephen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenigbolo/fixer-io-utility/issues"
+  },
+  "homepage": "https://github.com/kenigbolo/fixer-io-utility#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
