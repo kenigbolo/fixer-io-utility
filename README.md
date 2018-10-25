@@ -2,7 +2,7 @@
 
 # DEVELOPERS GUIDE
 
-[![Build Status](https://travis-ci.org/kenigbolo/fixer-io-utility.png)](https://travis-ci.org/kenigbolo/fixer-io-utility)
+[![Build Status](https://travis-ci.org/kenigbolo/fixer-io-utility.svg?branch=master)](https://travis-ci.org/kenigbolo/fixer-io-utility)
 
 ## Getting Started
 
