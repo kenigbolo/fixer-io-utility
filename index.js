@@ -10,16 +10,18 @@ const http = require('http');
 class FixerIO {
   /**
    * The FixerIO class constructor function
-   * @param {String} apiKey Fixer IO api key
+   * @param {String} apiKey {Required} Fixer IO api key
    */
   constructor(apiKey) {
+    if (apiKey === undefined) throw Error('Api key is a required value');
+    if (typeof apiKey !== 'string') throw TypeError('Api key should be string value');
     this.apiKey = apiKey;
   }
 
   /**
    * The request to fixer io
-   * @param {*} endpoint One of the avialable endpoints i.e symbol or latest
-   * @param {*} query The api query params i.e. &base, &symbol etc.
+   * @param {*} endpoint {Required} One of the avialable endpoints i.e symbol or latest
+   * @param {*} query {Optional} The api query params i.e. &base, &symbol etc.
    */
   request(endpoint, query = null) {
     if (endpoint == null) throw new Error('Request endpoint missing');
