@@ -21,8 +21,7 @@ This is a tiny package that allows making requests to the fixer.io api. The npm 
 This package has been published on [NPM](https://www.npmjs.com/package/fixer-io-utility) and is freely available according to the MIT license. To install via npm simply run `npm install fixer-io-utility`.
 
 ## NPM Package Usage
-```
-Javascript
+```javascript
 
 const FixerIO = require('fixer-io-utility');
 const fixerUtility = new FixerIO('put-your-api-key-here');
