@@ -1,6 +1,6 @@
 # fixer-io-utility
 
-# DEVELOPERS GUIDE
+# Developers Guide
 
 [![Build Status](https://travis-ci.org/kenigbolo/fixer-io-utility.svg?branch=master)](https://travis-ci.org/kenigbolo/fixer-io-utility)
 
@@ -32,12 +32,19 @@ fixerUtility.request('latest').then((response) => {
 ```
 The utility returns a resolved or rejected promise. The requirements for the request method are as follows:
 
-`request method`
+#### Request method
+
+`arguments`
 
 The request method takes two arguments
+
 1. The endpoint to which the call should be made i.e At this point of writing just two are found on the fixer io api documentation. The available options at the moment are `latest`,`symbols`, `convert`, `timeseries`, `fluctuation` and `dates e.g. YYYY-MM-DD`. This value should be passed as a string. This is a required string however for flexibility it is not fixed to any specific list of endpoints in order to allow new endpoints to be accessible also.
 
 2. The second argument taken by the request function is the query params. Kindly visit the official documentation to be sure what values are allowed but at the time of writing the allowed values are `base` and `symbol or symbols`, and these are only available on the `latest` endpoint. An example query argument should look like this `base=USD&symbols=GBP,JPY,EUR`. Please note that this type of query at the moment is not availble to the `symbols` endpoint. The `convert` endpoint allows for making queries such as `from=GBP&to=JPY&amount=200` using params `from`, `to` and `amount`. The `timeseries` and `fluctuation` endpoint currently allows queries such as `start_date=2012-05-01&end_date=2012-05-27` with the available params `start_date` and `end_date`.
+
+`return type`
+
+The return type of the request method is a `Promise`. In the future if necessary, an `async` flag will be provided as an optional parameter in the request method (it of couse will default to null) for those who prefer to use the `async/await` syntax.
 
 ## Disclaimer
 I am in no way connected to those who work at fixer.io. Project is simply a side project which I will try to maintain and expand as much as I can. At the time of this writing [2018-10-25] the fixer api requires an api token when making requests.
