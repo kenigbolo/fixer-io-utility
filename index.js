@@ -24,7 +24,7 @@ class FixerIO {
   /**
    * The request to fixer io
    * @param {String} endpoint {Required} One of the avialable
-   * endpoints i.e symbol or latest
+   * endpoints i.e symbol or latest.
    * @param {String} query {Optional} The api query params
    * i.e. &base, &symbol etc.
    * @return {Promise} Returns a promise
@@ -41,10 +41,10 @@ class FixerIO {
   /**
    * An object query request to fixer io - called from gatsby plugin
    * @param {String} endpoint {Required} One of the avialable
-   * endpoints i.e symbol or latest
+   * endpoints i.e symbol or latest.
    * @param {Object} query {Optional} The api query params in
    * key-value object i.e. {base=EUR} etc.
-   * @return {Promise} Returns a promise
+   * @return {Promise} Returns a promise.
    */
   reqQuery(endpoint, query = null) {
     const url = `http://data.fixer.io/api/${endpoint}?access_key=${
