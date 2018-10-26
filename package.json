@@ -1,4 +1,4 @@
-{
+ {
   "name": "fixer-io-utility",
   "version": "1.0.0",
   "description": "A tiny node module for requests to fixer.io",
@@ -32,6 +32,12 @@
   "homepage": "https://github.com/kenigbolo/fixer-io-utility#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^5.2.0"
+    "eslint": "^5.7.0",
+    "eslint-config-google": "^0.11.0",
+    "mocha": "^5.2.0",
+    "prettier": "^1.14.3"
+  },
+  "dependencies": {
+    "query-string": "^6.2.0"
   }
 }
